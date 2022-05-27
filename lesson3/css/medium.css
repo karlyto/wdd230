@@ -1,0 +1,39 @@
+/* CSS styling that takes place in tablet-sized views */
+@media only screen and (min-width: 37.5em) {
+
+    header {
+        border-radius: 10px 10px 0 0;
+    }
+
+    footer {
+        border-radius: 10px;
+    }
+
+    .colorcolumn, .fontcolumn, .audiencecolumn, .indexcolumn {
+        border-radius: 10px;
+    }
+
+    .columns {
+        grid-template-columns: auto auto;
+        border-radius: 10px;
+    }
+    
+    div section {
+        border-radius: 10px;
+    }
+
+
+    nav {
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav ul { 
+        display: flex; 
+    }
+    nav ul li { 
+        flex: 1 1 auto; 
+    }   
+}
+h3, h4 {
+    border-radius: 10px 10px 0 0;
+}
