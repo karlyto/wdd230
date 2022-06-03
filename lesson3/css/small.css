@@ -16,6 +16,8 @@ header, nav, main, footer {
 }      
 
 header, footer {
+    display: flex;
+    flex-direction: column;
     background-color: beige;
     text-align: center;
     color: #000000;
@@ -38,6 +40,9 @@ div section {
     background-color: beige;
     color: #FFFFFF;
 }
+section li {
+    color: #000000;
+}
 
 div section img {
     border: 1px solid rgb(255, 217, 217);
@@ -47,7 +52,7 @@ div section img {
 
 div section p {
     padding-top: 1rem;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 div section ul {
@@ -56,6 +61,7 @@ div section ul {
 }
 
 .colorcolumn, .fontcolumn, .audiencecolumn, .index1 {
+    color: #000000;
     background-color: beige;
     text-align: center;
 }
@@ -116,18 +122,45 @@ h3, h4 {
 .sectionheading {
     color: black;
     background-color:  rgb(148, 101, 40);
+    
+}
+.columns {
+    display: grid;
+    grid-gap: 10px;
+    padding-top: 10px;
+    margin: auto;
+}
+.image1 {
+    width : 500px;
+    height: 590px;
+}
+.scenarios {
+    text-align: center;
 }
 
+.site-logo {
+    width: 140px;
+    height: 70px;
+    margin: -40px -40px .1px -10px;
+    margin-bottom: -50px;
+    margin-left: -35px;
+    border-radius: 50px 50px 0 0; 
+}
 .subcolumns {
     color: black;
     background-color: beige;
 }
 
+.site-m {
+    font-size: 50px;
+    text-align: center;
+}
 .active {
     color: black;
     background-color: beige;
 }
 .links:hover { font-size:150%;}
 .link {
+    color: #000000;
     background-color: white;
 }
