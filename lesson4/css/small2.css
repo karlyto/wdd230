@@ -54,7 +54,7 @@ header h2 {
 .logo {
     max-width: 70px;
     margin: 5pt 5pt;
-    margin-right: 0pt;
+    margin-right: -20px;
 } 
 header button {
     justify-self: end;
