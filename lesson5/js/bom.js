@@ -1,29 +1,3 @@
-// const input = document.querySelector("input");
-// const button = document.querySelector("button");
-// const list = document.querySelector("ul");
-
-// button.addEventListener("click", () => {
-//     const items = favchap.value;
-//     favchap.value = "";
-
-//     const listElement = document.createElement("li");
-//     const listText = document.createElement("span");
-//     const listButton = document.createElement("button")
-
-//     listElement.textContent = items;
-//     listButton.textContent = "❌";
-
-//     listElement.appendChild(listButton);
-//     listElement.appendChild(listText)
-//     list.appendChild(listElement);
-    
-//     listButton.addEventListener("click",() => {
-//         list.removeChild(listElement);
-//     });
-
-//     input.focus();
-// });
-
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const list = document.querySelector(".list");
