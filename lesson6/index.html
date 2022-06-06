@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nyferoom Chamber of Commerce Planning Document</title>
+    <meta name="description" content="Web site planning document for Nyferoom Chamber of Commerce page.">
+    <link rel="icon" href="images/Nyfer2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small2.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/myfavicon.ico">
+</head>
+<body>
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.<button id="close">❌</button></div>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <div class="name">
+            <h1>Nyferoom</h1>
+            <h2 class="coc">Chamber of Commerce</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="ig logo"></a>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <span class="date" id="currentdate"></span>
+        <nav>
+            <ul class="navigation" id="primaryNav">
+                <li class="links"><a href="index.html"><strong>Home</strong></a></li>
+                <li class="links"><a href="#"><strong>Discover</strong></a></li>
+                <li class="links"><a href="#"><strong>Directory</strong></a></li>
+                <li class="links"><a href="#"><strong>Join</strong></a></li>
+                <li class="links"><a href="#"><strong>Contact</strong></a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+    <main class="index">
+        <div class="hero">
+            <h2>Welcome to Nyferoom</h2>
+            <picture>
+                <source media="(max-width: 520px)" srcset="images/Small.jpg">
+                <source media="(max-width: 832px)" srcset="images/Medium.jpg">
+                <source media="(min-width: 833px)" srcset="images/Large.jpg">
+                <img src="images/wdd230-org.jpg" alt="wdd-image">
+            </picture>
+            <button>Join the chamber</button>
+        </div>
+        <div>
+            <h2>Opening Class</h2>
+            <h3>🎁 Pitch & Gift 🎁</h3>
+            <p>Join us for the grand opening of our first giveaway pitch & gift at San Isidro. Friday at 10:00 am.<br>
+                <b>more info...</b>
+            </p>
+        </div>
+        <div>
+            <h2>Weather</h2>
+            <img src="images/weather.png" alt="weather">
+            <h3><span id="temperature">21</span>°C<br>Partly Cloudy</h3>
+            <p>
+                Wind speed: <span id="wind">  12</span> km/h<br>
+                Wind Chill: <span id="chill">  N/A</span>
+            </p>
+        </div>
+        <div>
+            <h2>News Release</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Veritatis provident magnam reiciendis non architecto,
+                quidem quos accusamus autem perferendis! Dolorem est,
+                cumque saepe illo quas voluptatibus dolorum sequi
+                blanditiis omnis a aliquam in magni molestiae provident
+                officiis ducimus incidunt eveniet aperiam odit!
+                Esse aliquam recusandae, debitis nemo at ullam quasi
+                dolorum neque non ea nostrum exercitationm impedit.
+                </p>
+        </div>
+        <div class="join">
+            <button>Join Us!</button>
+            <p>Discover how to join the chamber of commerce and how it will benefit
+               your organization! 
+            </p>
+        </div>
+        <div class="spotlight">
+            <div>
+                <h2>Sales Point & Easy Ship</h2>
+                <img class="van" src="images/van.jpeg" alt="van">
+                <h3>Direct message & Deal </h3>
+                <p>contact@dm4deal.com<br>+1 123-456-789</p>
+            </div>
+            <div>
+                <h2>Make it Easy</h2>
+                <img src="images/shopping-bag.png" alt="shopping bag logo">
+                <h3>Promote , Shop & grow with Nyfer</h3>
+                <p>contact@nyferoom.com<br>+1 123-456-789</p>
+            </div>
+            <div class="lastspot">
+                <h2>Every brands on the way</h2>
+                <img src="images/model.png" alt="modellogo">
+                <h3>Enjoy the best brands and model farm </h3>
+                <p>contact@brands.com<br>+1 987-654-321</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="title">
+            <img src="images/logo.webp" alt="logo">
+            <div>
+                <h1>Nyferoom-Chamber of Commerce</h1>
+                <p>Sariyer Gazi SK </p>
+                <p>Camlitepe</p>
+            </div>
+        </div>
+        <div class="contact">
+            <p>info@nyferoom.org</p>
+            <p>+1 123-456-789</p>
+            <p>&#128205;<a href="https://goo.gl/maps/A1KHaqWPiY56C7t77">Location map</a></p> </div>
+        <div class="end">
+            <p>&copy; <span id="currentyear"></span> Nyferoom Chamber </p>
+            <p class="line">|</p>
+            <p><b>Carly Jensen Michel</b></p>
+            <p class="line">|</p>
+            <p>WDD 230 Project</p>
+            <p class="line">|</p>
+            <p>Last Modification: <span id="lastModific"></span></p>
+            <script src="js/date.js"></script>
+            <script src="js/windchill.js"></script>
+        </div>
+    </footer>
+</body>
+</html>
