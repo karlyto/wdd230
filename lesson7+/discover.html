@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Discover</title>
+    <meta name="description" content="Web site planning document for Nyferoom Chamber of Commerce page.">
+    <link rel="icon" href="images/discover/Nyfer2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/myfavicon.ico">
+</head>
+<body>
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.<button id="close">❌</button></div>
+    <header>
+        <img class="logo" src="images/discover/logo.webp" alt="logo">
+        <div class="name">
+            <h1>Nyferoom</h1>
+            <h2 class="coc">Chamber of Commerce</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/discover/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/"><img src="images/discover/instagram.png" alt="ig logo"></a>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <span class="date" id="currentdate"></span>
+        <nav>
+            <ul class="navigation" id="primaryNav">
+                <li class="links"><a href="../lesson6/index.html"><strong>Home</strong></a></li>
+                <li class="links"><a href="../lesson7+/discover.html"><strong>Discover</strong></a></li>
+                <li class="links"><a href="#"><strong>Directory</strong></a></li>
+                <li class="links"><a href="#"><strong>Join</strong></a></li>
+                <li class="links"><a href="#"><strong>Contact</strong></a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+    <main class="discover">   
+        <div class="data">
+            <h2>Location</h2>
+            <picture><img src="images/discover/img1.jpg" alt="map"></picture>
+            <p>First C.S room is located in Istanbul, Turkey.</p>
+            <h2>Demography</h2>
+            <div>
+                <p><b>Population:</b></p>
+                <p>+15 Million inhabitants</p>
+                <p><b>Population density:</b></p>
+                <p>2523 inhabitants/km2</p>
+            </div>
+            <h2>Pyramidal Target</h2>
+            <picture><img src="images/discover/img4.png" alt="Demography"></picture>
+            <p>Nyferoom plan's target range from +16 to 50 years old</p>
+            <h2>Shopify Stats</h2>
+            <picture><img src="images/discover/img3.jpg" alt="graph"></picture>
+            <p> 🟡 Growing entries from local businesses to the Chamber.<br>
+                🔵 Growing entries from shopping around demographic stats.<br>
+                🔴 Growing entries from shopping platform 2012-2022.</p>
+        
+            <h2>Trending sales</h2>
+            <picture><img src="images/discover/img5.jpg" alt="Demography"></picture>
+        </div>
+        <div class="gallery">
+            <h2> 🛒Gallery & Trends🛒</h2>
+            <h3>Flash sales</h3>
+            <picture><img src="images/discover/img6.jpg" data-src="images/discover/img6.jpg" alt="img"></picture>
+            <p>The first sales points day will be started the next terms after Hallowen at 10PM</p>
+            <h3>Within malls</h3>
+            <picture><img src="images/discover/img7.jpg"  data-src="images/discover/img7.jpg" alt="point"></picture>
+            <p>Join our community and grow your sales point during the whole week's on saling brand, buy 2 pieces get one free, offered by all affiliated platforms.</p>
+            <h3>Models exposure</h3>
+            <picture><img src="images/discover/img8.jpg"  data-src="images/discover/img8.jpg" alt="models"></picture>
+            <p>Customizable models are available for the first 40 platforms performing over 70% of sales during exhaustive term.</p>
+            <h3>First chamber </h3>
+            <picture><img src="images/discover/img9.jpg"  data-src="images/discover/img9.jpg" alt="chamber"></picture>
+            <p>Come and visit the first Nyferoom and get 10% discount of shopping.</p>
+            <h3>Payment methods</h3>
+            <picture><img src="images/discover/img10.jpg"  data-src="images/discover/img10.jpg" alt="payment"></picture>
+            <p>Available on each platform and physical with over 22 payment method including QR .</p>
+        </div>
+        <div>
+            <p><b>Number of Visits: </b><span class="visits"></span></p>
+            <p><b>Days since last visit: </b><span class="day-since"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="title">
+            <img src="images/discover/logo.webp" alt="logo">
+            <div>
+                <h1>Nyferoom-Chamber of Commerce</h1>
+                <p>Sariyer Gazi SK </p>
+                <p>Camlitepe</p>
+            </div>
+        </div>
+        <div class="contact">
+            <p>info@nyferoom.org</p>
+            <p>+1 123-456-789</p>
+            <p>&#128205;<a href="https://goo.gl/maps/A1KHaqWPiY56C7t77">Location map</a></p> </div>
+        <div class="end">
+            <p>&copy; <span id="currentyear"></span> Nyferoom Chamber </p>
+            <p class="line">|</p>
+            <p><b>Carly Jensen Michel</b></p>
+            <p class="line">|</p>
+            <p>WDD 230 Project</p>
+            <p class="line">|</p>
+            <p>Last Modification: <span id="lastModific"></span></p>
+            <script src="js/date.js" defer></script>
+            <script src="js/visit.js" defer></script>
+        </div>
+    </footer>
+</body>
+</html>
