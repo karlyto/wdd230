@@ -1,0 +1,75 @@
+:root {
+	--back: white;
+  --back2: #945828;
+  --foredark: white;
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+	--zebra:  rgb(226, 226, 198);
+    --caption: #6b0303;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+}
+
+div {
+	box-shadow:  10px 10px 5px var(--shadow);
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+table {
+	border: thin solid var(--border);
+	border-collapse: collapse;
+	box-shadow:  10px 10px 5px var(--shadow);
+	max-width: 40rem;
+    margin: 0 auto;
+    width: 50%;
+	min-height: 40rem;
+
+}
+
+th, td {
+	padding: 10px 6px;
+	border: 1px solid var(--borderlight);
+}
+
+thead tr:nth-child(1) {
+    padding: 10px;
+	color: var(--back);
+	font-size: 1.5rem;
+    border: thin solid var(--border);
+    background-color: var(--caption);
+}
+
+thead tr:nth-child(2) {
+	background-color: var(--back2);
+	color: white;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+tbody tr:nth-child(4) td:last-child {
+	background-color: var(--back2);
+	color: white;
+}
+tfoot td {
+    background-color: var(--caption);
+    color: white;
+	font-size: .75rem;
+}
+
+th, td {
+		font-size: 2rem;
+	}
+thead tr:nth-child(1) {
+		font-size: 2rem;
+	}
