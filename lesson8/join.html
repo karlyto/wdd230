@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Join</title>
+    <meta name="description" content="Web site planning document for Nyferoom Chamber of Commerce page.">
+    <link rel="icon" href="../lesson7+/images/discover/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/myfavicon.ico">
+</head>
+<body>
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.<button id="close">❌</button></div>
+    <header>
+        <img class="logo" src="../lesson7+/images/discover/logo.webp" alt="logo">
+        <div class="name">
+            <h1>Nyferoom</h1>
+            <h2 class="coc">Chamber of Commerce</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="../lesson7+/images/discover/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/"><img src="../lesson7+/images/discover/instagram.png" alt="ig logo"></a>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <span class="date" id="currentdate"></span>
+        <nav>
+            <ul class="navigation" id="primaryNav">
+                <li class="links"><a href="../lesson6/index.html"><strong>Home</strong></a></li>
+                <li class="links"><a href="../lesson7+/discover.html"><strong>Discover</strong></a></li>
+                <li class="links"><a href="#"><strong>Directory</strong></a></li>
+                <li class="links"><a href="../lesson8/join.html"><strong>Join</strong></a></li>
+                <li class="links"><a href="#"><strong>Contact</strong></a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+    <main class="join">
+        <div class="introduction">
+            <h2>WELCOME !!</h2>
+            <hr>
+        </div>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend><strong>Applicant information</strong></legend>
+               <label class="top"> First Name* <input type="text" name="fname" placeholder="John" required> </label>
+               <label class="top"> Last Name* <input type="text" name="lname" placeholder="Doe" required> </label>
+               <label class="top"> Email* <input type="email" name="email" placeholder="user@domain.com" required> </label>
+               <label class="top"> Phone* <input type="tel" name="phone" placeholder="(__)___ __ ___" required> </label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>About your Business</strong></legend>
+                <label class="top"> Business Name/Title* <input type="text" name="business-name" required> </label>
+                <label class="top"> Describe your Business <textarea name="description"></textarea> </label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Membership level</strong></legend>
+                <label class="sbs"><input type="radio" name="membership" value="np-membership"> Non-Profit Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze-membership"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver-membership"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold-membership"> Gold Membership</label>
+            </fieldset>
+            <input type="hidden" id="date-time" name="date-time" value="CurrentTime">
+            <input type="submit" value="Join the Chamber" class="submitBtn">
+            <hr>
+        </form>
+        <div class="benefits">
+            <h3>Membership level benefits</h3>
+            <p>Non-Profit Benefits | Free</p>
+            <ul>
+                <li> Exchange ideas with other affiliates through our monthly meeting</li>
+                <li>Opportunities to get credit for your business</li>
+            </ul>    
+            <p>Bronze Membership Benefits | $100</p>
+            <ul>
+                <li>All of the benefits of the Non-Profit benefits</li>
+                <li>Receive our monthly magazine with ideas for your business</li>
+                <li>Partake in our semestral fair to expose your business and your products</li>
+                <li>5% discount in our selected stores</li>
+            </ul>
+            <p>Silver Membership Benefits | $200</p>
+            <ul>
+                <li>All of the benefits of the Bronze level</li>
+                <li>Publicity of your business and products in our magazine</li>
+                <li>8% discount in our selected stores</li>
+                <li>Monthly capacitation for you and your employers about sell technics</li>
+            </ul>
+            <p>Gold Membership Benefits | $300</p>
+            <ul>
+                <li>All of the benefits of the Bronze level</li>
+                <li>Publicity on our website</li>
+                <li>12% discount in our selected stores</li>
+                <li>Nyferoom promotion on quick points sales Health</li>
+            </ul>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="title">
+            <img src="../lesson7+/images/discover/logo.webp" alt="logo">
+            <div>
+                <h1>Nyferoom-Chamber of Commerce</h1>
+                <p>Sariyer Gazi SK </p>
+                <p>Camlitepe</p>
+            </div>
+        </div>
+        <div class="contact">
+            <p>info@nyferoom.org</p>
+            <p>+1 123-456-789</p>
+            <p>&#128205;<a href="https://goo.gl/maps/A1KHaqWPiY56C7t77">Location map</a></p> </div>
+        <div class="end">
+            <p>&copy; <span id="currentyear"></span> Nyferoom Chamber </p>
+            <p class="line">|</p>
+            <p><b>Carly Jensen Michel</b></p>
+            <p class="line">|</p>
+            <p>WDD 230 Project</p>
+            <p class="line">|</p>
+            <p>Last Modification: <span id="lastModific"></span></p>
+            <script src="js/date.js" defer></script>
+            <script src="js/visit.js" defer></script>
+        </div>
+    </footer>
+</body>
+</html>

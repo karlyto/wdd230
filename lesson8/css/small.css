@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: 'Merriweather', serif;
+    background-color: beige;
+}
+#banner {
+	display: none;
+	margin: 0 auto;
+    background-color: rgb(163, 163, 114);
+	border: 1px solid #bbb;
+	padding: 1rem;
+	text-align: center;
+	max-width: 1050px;
+}
+header, main, footer {
+	max-width: 1050px;
+	margin: 6pt auto;
+}
+header {
+	background-color: beige;
+	display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    align-items: center;
+	justify-content: center;
+    text-align: start;
+}
+.name {
+    justify-self: start;
+}
+h1 {
+	font-size: 1.2rem;
+	font-family: 'Merriweather', serif;
+	color: burlywood;
+}
+header h2 {
+    font-size: 0.8rem;
+	border-top: 1px solid beige ;
+	color: black;
+}
+.social {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+.social img{
+    width: 25px;
+    margin: 0.1rem;
+}
+.logo {
+    max-width: 70px;
+    margin: 5pt 5pt;
+    margin-right: -8px;
+} 
+header button {
+    justify-self: end;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    margin-right: 20px; 
+    color: burlywood;
+}
+header .date{
+    grid-column: 1/5;
+    margin: 15px 8px;
+    color:white;
+    background-color: rgb(163, 163, 114);
+    text-align: center; 
+}
+nav {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+nav ul{
+    background-color: beige;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: underline;
+    color: black;
+    font-size: 1rem;
+}
+nav ul li a:hover {
+    background-color: rgb(163, 163, 114);
+}
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+.index .hero{
+    padding: 0;
+    position: relative;
+}
+.index .hero h2{
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: burlywood;
+    text-shadow: 2px 2px black;
+}
+main h2,h3 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.index div{
+    background-color: beige;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    border: 1px rgb(194, 129, 44) solid;
+}
+.index .hero img{
+    width: 100%;
+    margin: 0px;
+}
+.index .hero button{
+    position: absolute;
+    bottom: 20px;
+	right: 30px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px ;
+    background-color: burlywood;
+    font-weight: bold;
+}
+
+.index div h2{
+    width: 100%;
+    margin: 0px;
+}
+.index div:nth-of-type(2) h2,h3{
+    margin: 8pt;
+}
+.index div:nth-of-type(3) img{
+    float: left;
+    width: 150px;
+}
+.index div:nth-of-type(3) p{
+    clear: left;
+}
+.index div:nth-of-type(3) h3{
+    margin-top: 8vh;
+    font-size: 22px;
+}
+.index div:nth-of-type(5){
+    display: none;
+}
+.spotlight {
+    border: 1px #A1B0AB solid;
+    background-color: #E9ECEA;
+    margin: 0.4rem;
+    padding: 1rem;
+    height: auto;
+}
+.spotlight div:nth-of-type(1) img, .spotlight div:nth-of-type(2) img, .spotlight div:nth-of-type(1) p, .spotlight div:nth-of-type(2) p{
+    width: 100%;
+    text-align: center;
+} 
+.lastspot{
+    display: none;
+}
+.spotlight div {
+    margin: 0;
+}
+
+.discover div{
+    background-color: rgb(236, 236, 203);
+    margin: 0.4rem;
+    padding: 0.4rem;
+    border: 1px #A1B0AB solid;
+}
+
+.discover h2{
+    margin: 10px;
+}
+
+.discover picture ~ p {
+    margin: 25px;
+} 
+
+.discover picture{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.discover div:nth-of-type(1) img{
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin: auto;
+    border: 2px #A1B0AB solid;
+}
+.discover div:nth-of-type(2) img{
+    border: 1px rgb(163, 163, 114) solid;
+}
+
+.discover div:nth-of-type(1) div{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+footer{
+	background-color: beige;
+	color: black;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 8pt;
+}
+.title{
+    margin-bottom: 1rem;
+}
+.title img{
+    width: 150px;
+}
+.contact, .contact p{
+    margin-bottom: 1rem;
+}
+.contact a{
+    color:rgb(163, 163, 114) ;
+}
+.end{
+    border-top: 0.1rem rgb(163, 163, 114) solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+}
+.line {
+    display: none;
+}
+/*--------------------------------------join page-------------------------------------------------*/
+form{
+    margin: 0 auto;
+    max-width: 500px;
+}
+hr{
+    margin: 0 auto;
+    max-width: 500px;   
+}
+main.join h2{
+    margin-top: 1.5rem;
+}
+form fieldset {
+    margin: 1.2rem 0.2rem;
+    border: 1px solid #1C211D;
+    border-radius: 8px;
+    padding: .5rem 2%;
+    background-color:  burlywood;
+}
+form legend{
+    color: #1C211D;
+    font-family: 'Merriweather', serif;
+    margin: 0 1rem;
+    padding: 0 .5rem 0.8rem .5rem;
+}
+form label.top{
+    display:block;
+    padding-bottom: 1rem;
+    color: #1C211D;
+    font-size: 0.9rem;
+}
+
+form label.top input, form label.top input select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px  rgb(163, 163, 114);;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #1C211D;
+    width:100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.top textarea{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px  rgb(163, 163, 114);;
+    border-radius: 4px;
+    max-height: 40em;
+    height: 7em;
+    padding: 0.75em;
+    color: #1C211D;
+    width:100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs{
+    display: block;
+    padding: 0.75rem 0;
+    color: #1C211D;
+}
+form input.submitBtn {
+    border: solid 1px #555;
+    background-color: brown;
+    color: #1C211D;
+    border-radius: 0.7rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+main.join .benefits{
+    margin: 4rem;
+    display: none;
+
+}
+main.join .benefits p{
+    list-style-type: circle;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    margin-top: 2.5rem;
+}
+main.join ul li{
+    font-weight: 100;
+    margin: 0.5rem;
+    font-family: 'Merriweather', serif;
+}
+form label.top input:required{
+    background-color:  beige;
+}
+form label.top input:required:valid{
+    background-color: rgb(238, 228, 214);
+}
+/*-----------------------------thank you page ---------------------------------*/
+main.thanks h2,main.thanks p {
+    margin-top: 3rem;
+    text-align: center;
+}
+main.thanks p {
+    margin-bottom: 3rem;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
