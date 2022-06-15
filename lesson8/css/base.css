@@ -15,6 +15,7 @@ body {
 	font-size: 12px;
 }
 
+
 div {
 	box-shadow:  10px 10px 5px var(--shadow);
 	margin: 20px auto;
@@ -22,18 +23,14 @@ div {
 }
 
 table {
+	margin: 20px auto;
 	border: thin solid var(--border);
 	border-collapse: collapse;
 	box-shadow:  10px 10px 5px var(--shadow);
-	max-width: 40rem;
-    margin: 0 auto;
-    width: 50%;
-	min-height: 40rem;
-
 }
 
 th, td {
-	padding: 10px 6px;
+	padding: 7px 6px;
 	border: 1px solid var(--borderlight);
 }
 
@@ -61,15 +58,19 @@ tbody tr:nth-child(4) td:last-child {
 	background-color: var(--back2);
 	color: white;
 }
-tfoot td {
+tfoot {
     background-color: var(--caption);
-    color: white;
-	font-size: .75rem;
 }
 
-th, td {
+@media only screen and (min-width: 300px ){
+	body {
+		font-size: 16px;
+	}
+	th, td {
+		padding: 7px 15px;
+		border: 1px solid var(--borderlight);
+	}
+	thead tr:nth-child(1) {
 		font-size: 2rem;
 	}
-thead tr:nth-child(1) {
-		font-size: 2rem;
-	}
+}
