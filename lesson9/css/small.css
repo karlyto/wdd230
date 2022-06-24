@@ -271,6 +271,7 @@ main.directory div.grid section{
     justify-content: space-between;
     background-color: beige;
     border: 1px #A1B0AB solid;
+    align-items: center;
   }
   main.directory div.list section {
     margin: 0.5rem;
@@ -289,6 +290,7 @@ main.directory div.cards p{
 main.directory div.grid img {
     width: 80%;
     margin: 0.5rem;
+    align-items: center;
   }  
 main.directory div.list h2{
     margin-left: 0.075rem;
