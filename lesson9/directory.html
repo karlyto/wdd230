@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Directory</title>
+    <meta name="description" content="Web site planning document for Nyferoom Chamber of Commerce page.">
+    <link rel="icon" href="../lesson7+/images/discover/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/myfavicon.ico">
+</head>
+<body>
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.<button id="close">❌</button></div>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <div class="name">
+            <h1>Nyferoom</h1>
+            <h2 class="coc">Chamber of Commerce</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="ig logo"></a>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <span class="date" id="currentdate"></span>
+        <nav>
+            <ul class="navigation" id="primaryNav">
+                <li class="links"><a href="../lesson6/index.html"><strong>Home</strong></a></li>
+                <li class="links"><a href="../lesson7+/discover.html"><strong>Discover</strong></a></li>
+                <li class="links"><a href="../lesson9/directory.html"><strong>Directory</strong></a></li>
+                <li class="links"><a href="../lesson8/join.html"><strong>Join</strong></a></li>
+                <li class="links"><a href="#"><strong>Contact</strong></a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+    <main class="directory">
+        <figure>
+            <img id="grid" src="images/grid(1).png" alt="grid logo">
+            <img id="list" src="images/list.png" alt="list logo">
+        </figure>
+        <h1 class="dpage" id="directoryTitle">DIRECTORY</h1>
+        <div class="cards grid"></div>        
+    </main>
+
+
+
+    <footer>
+        <div class="title">
+            <img src="../lesson7+/images/discover/logo.webp" alt="logo">
+            <div>
+                <h1>Nyferoom-Chamber of Commerce</h1>
+                <p>Sariyer Gazi SK </p>
+                <p>Camlitepe</p>
+            </div>
+        </div>
+        <div class="contact">
+            <p>info@nyferoom.org</p>
+            <p>+1 123-456-789</p>
+            <p>&#128205;<a href="https://goo.gl/maps/A1KHaqWPiY56C7t77">Location map</a></p> </div>
+        <div class="end">
+            <p>&copy; <span id="currentyear"></span> Nyferoom Chamber </p>
+            <p class="line">|</p>
+            <p><b>Carly Jensen Michel</b></p>
+            <p class="line">|</p>
+            <p>WDD 230 Project</p>
+            <p class="line">|</p>
+            <p>Last Modification: <span id="lastModific"></span></p>
+            <script src="js/date.js" defer></script>
+            <script src="js/visit.js" defer></script>
+            <script src="js/directory.js" defer></script>
+        </div>
+    </footer>
+</body>
+</html>

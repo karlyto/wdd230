@@ -293,7 +293,7 @@ form label.top textarea{
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 1px  rgb(163, 163, 114);;
+    border: solid 1px  rgb(163, 163, 114);
     border-radius: 4px;
     max-height: 40em;
     height: 7em;
@@ -310,7 +310,7 @@ form label.sbs{
 }
 form input.submitBtn {
     border: solid 1px #555;
-    background-color: brown;
+    background-color: burlywood;
     color: #1C211D;
     border-radius: 0.7rem;
     padding: 0.75rem 1.5rem;

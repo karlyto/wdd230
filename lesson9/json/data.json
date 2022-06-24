@@ -1,0 +1,85 @@
+{
+    "companies": [
+        {
+            "logo": "https://cdn.shopify.com/s/files/1/0585/1591/4915/files/PARADISE_3_360x.png?v=1648143523",
+            "name": "PARADISE BABY STORE",
+            "phone": "123-456-987",
+            "email": "paradisebs@gmail.com",
+            "url": "https://paradisebabystore.com/",
+            "address": "New York",
+            "membership": "Gold Membership"
+        },
+        {
+            "logo": "https://cdn.shopify.com/s/files/1/0261/2323/9484/files/Logo_2_180x.png?v=1564749142",
+            "name": "LABELLE",
+            "phone": "123-456-789",
+            "email": "labelle@user.com",
+            "url": "https://labelle.cl/",
+            "address": "Chile",
+            "membership": "Non-Profit Membership"
+        },
+        {
+            "logo": "https://cdn.shopify.com/s/files/1/0580/6319/2217/files/rhozzo-03_150x.png?v=1626360940",
+            "name": "RHOZZO",
+            "phone": "123-456-789",
+            "email": "rhozzo@user.com",
+            "url": "https://rhozzo.com/",
+            "address": "Haiti",
+            "membership": "Gold Membership"
+        },
+        {
+            "logo": "https://shantaeboutique.com/wp-content/uploads/2020/10/final-01.png",
+            "name": "SHANTAE BOUTIQUE",
+            "phone": "123-456-789",
+            "email": "shantae@user.com",
+            "url": "https://rhozzo.com/collections/all",
+            "address": "Petion Ville",
+            "membership": "Silver Membership"
+        },
+        {
+            "logo": "https://www.mejeannecouture.com/wp-content/uploads/2014/11/MJLogoSmall1.png",
+            "name": "MEJEANNE COUTURE",
+            "phone": "789-123-456",
+            "email": "mejeanne@user.com",
+            "url": "https://www.mejeannecouture.com/",
+            "address": "Haiti",
+            "membership": "Gold Membership"
+        },
+        {
+            "logo": "https://cdn.shopify.com/s/files/1/0579/6423/2857/files/Logo_Full_solid_copy_46fd4e37-4c76-4fec-9403-cdb995bc66f4_360x.png?v=1629219660",
+            "name": "KOUKA CLOSET",
+            "phone": "445-562-541",
+            "email": "info@koukascloset.com",
+            "url": "https://www.koukascloset.com/",
+            "address": "Miami",
+            "membership": "Gold Membership"
+        },
+        {
+            "logo": "https://cdn.shopify.com/s/files/1/2216/1387/files/HAITIANBUY-LOGO-WEB_1e901967-dd54-4993-b80b-8d289c69afae_180x.png?v=1619164950",
+            "name": "HAITIAN BUY",
+            "phone": "335-410-81",
+            "email": "htbuy@user.com",
+            "url": "https://www.haitianbuys.com/collections/all",
+            "address": "Haiti",
+            "membership": "Silver Membership"
+        },
+        {
+            "logo": "https://cdn.shopify.com/s/files/1/0601/0460/5904/files/Captura_140x.png?v=1631669072",
+            "name": "BENEATOS",
+            "phone": "123-450-741",
+            "email": "beneatos@user.com",
+            "url": "https://beneatos.com/",
+            "address": "Santiago",
+            "membership": "Bronze Membership"
+        },
+        {
+            "logo": "https://www.bluediamond.com.tr/img/logo-2.png",
+            "name": "BLUE DIAMOND",
+            "phone": "123-456-789",
+            "email": "bluediamond@user.com",
+            "url": "https://www.bluediamond.com.tr/",
+            "address": "Istanbul",
+            "membership": "Silver Membership"
+        }
+    ]
+}
