@@ -294,7 +294,7 @@ main.directory div.grid img {
   }  
 main.directory div.list h2{
     margin-left: 0.075rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left;
 }
 main.directory div.list img{
@@ -302,7 +302,8 @@ main.directory div.list img{
 }
 main.directory div.list p{
     margin-left: 0.075rem;
-    text-align: left;
+    text-align:left;
+    
 }
 
 .title{

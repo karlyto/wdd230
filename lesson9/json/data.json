@@ -6,8 +6,8 @@
             "phone": "123-456-987",
             "email": "paradisebs@gmail.com",
             "url": "https://paradisebabystore.com/",
-            "address": "New York",
-            "membership": "Gold Membership"
+            "address": "226 Belmont Parkway, Hempstead",
+            "membership": "Bronze Membership"
         },
         {
             "logo": "https://cdn.shopify.com/s/files/1/0261/2323/9484/files/Logo_2_180x.png?v=1564749142",
@@ -15,7 +15,7 @@
             "phone": "123-456-789",
             "email": "labelle@user.com",
             "url": "https://labelle.cl/",
-            "address": "Chile",
+            "address": "#4C Calle llamos ,Rita",
             "membership": "Non-Profit Membership"
         },
         {
@@ -24,8 +24,8 @@
             "phone": "123-456-789",
             "email": "rhozzo@user.com",
             "url": "https://rhozzo.com/",
-            "address": "Haiti",
-            "membership": "Gold Membership"
+            "address": "Peguy-ville,2 Rue Lamae",
+            "membership": "Bronze Membership"
         },
         {
             "logo": "https://shantaeboutique.com/wp-content/uploads/2020/10/final-01.png",
@@ -33,7 +33,7 @@
             "phone": "123-456-789",
             "email": "shantae@user.com",
             "url": "https://rhozzo.com/collections/all",
-            "address": "Petion Ville",
+            "address": "Petion Ville, 14th street",
             "membership": "Silver Membership"
         },
         {
@@ -42,7 +42,7 @@
             "phone": "789-123-456",
             "email": "mejeanne@user.com",
             "url": "https://www.mejeannecouture.com/",
-            "address": "Haiti",
+            "address": "19th Delmas,P. Lumumba",
             "membership": "Gold Membership"
         },
         {
@@ -51,7 +51,7 @@
             "phone": "445-562-541",
             "email": "info@koukascloset.com",
             "url": "https://www.koukascloset.com/",
-            "address": "Miami",
+            "address": "Miramar FL 33025,Miami",
             "membership": "Gold Membership"
         },
         {
@@ -60,7 +60,7 @@
             "phone": "335-410-81",
             "email": "htbuy@user.com",
             "url": "https://www.haitianbuys.com/collections/all",
-            "address": "Haiti",
+            "address": "Shadda 18#4, ard 16",
             "membership": "Silver Membership"
         },
         {
@@ -69,7 +69,7 @@
             "phone": "123-450-741",
             "email": "beneatos@user.com",
             "url": "https://beneatos.com/",
-            "address": "Santiago",
+            "address": "Santiago, Sur Isidro 4d",
             "membership": "Bronze Membership"
         },
         {
@@ -78,7 +78,7 @@
             "phone": "123-456-789",
             "email": "bluediamond@user.com",
             "url": "https://www.bluediamond.com.tr/",
-            "address": "Istanbul",
+            "address": "Taksim. karadeniz mah Ist,kat 2",
             "membership": "Silver Membership"
         }
     ]

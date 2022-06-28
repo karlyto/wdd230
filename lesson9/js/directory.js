@@ -4,7 +4,7 @@ const display = document.querySelector(".cards");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-gridbutton.addEventListener("click", () => {
+gridbutton.addEventListener("click", () => {;
 	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
@@ -45,6 +45,7 @@ fetch(requestURL)
     let phone = document.createElement('p');
     let address = document.createElement('p');
     let website = document.createElement('p');
+    let membership = document.createElement('p');
   
     // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${company.name}`;
@@ -55,6 +56,7 @@ fetch(requestURL)
   
     phone.textContent = `${company.phone}`;
     address.textContent = `${company.address}`;
+    membership.textContent = `${company.membership}`;
     website.innerHTML = `<a href="${company.url}" target="_blank">Commerce Website</a>`;
     
   
@@ -64,7 +66,7 @@ fetch(requestURL)
     card.appendChild(phone);
     card.appendChild(website);
     card.appendChild(logo);
-    
+    card.appendChild(membership);
   
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
