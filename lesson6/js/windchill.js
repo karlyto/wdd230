@@ -3,7 +3,7 @@ const wind = document.querySelector('#wind');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#condition');
 let chill = document.querySelector('#chill');
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Istanbul&appid=8ff9999d552995216615d400071558b8&units=imperial';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Istanbul&appid=8ff9999d552995216615d400071558b8&units=metric';
 
 // weather data------------------------------------------------------------------------------//
 
