@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Nyferoom Chamber of Commerce Planning Document</title>
+    <title> Contact Us</title>
     <meta name="description" content="Web site planning document for Nyferoom Chamber of Commerce page.">
     <link rel="icon" href="images/Nyfer2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +31,11 @@
         <span class="date" id="currentdate"></span>
         <nav>
             <ul class="navigation" id="primaryNav">
-                <li class="links"><a href="index.html"><strong>Home</strong></a></li>
+                <li class="links"><a href="../lesson6/index.html"><strong>Home</strong></a></li>
                 <li class="links"><a href="../lesson7+/discover.html"><strong>Discover</strong></a></li>
                 <li class="links"><a href="../lesson9/directory.html"><strong>Directory</strong></a></li>
                 <li class="links"><a href="../lesson8/join.html"><strong>Join</strong></a></li>
-                <li class="links"><a href="#"><strong>Contact</strong></a></li>
+                <li class="links"><a href="../lesson11/contact.html"><strong>Contact</strong></a></li>
             </ul>
 
         </nav>
@@ -45,6 +45,80 @@
     <main class="contactus">
         <div class="contact">
             <h2> Contact US </h2>
+        </div>
+        <div class="box">
+            <div class="cntact form">
+                <h3> <strong>Send a message</strong></h3>
+                <form method="get" action="thankyou.html" >
+                    <div class="formBox">
+                        <div class="rows">
+                            <div class="inputBox">
+                                <span> First Name* </span>
+                                <input type="text" placeholder="John" required>
+                            </div>
+                            <div class="inputBox">
+                                <span> Last Name*</span>
+                                <input type="text" placeholder="Doe" required>    
+                        </div>
+                    </div>
+
+                    <div class="rows">
+                        <div class="inputBox">
+                            <span> Email*</span>
+                            <input type="text" placeholder="user@domain.org" required>
+                        </div>
+                        <div class="inputBox">
+                            <span> Phone*</span>
+                            <input type="text" placeholder="(__)__-___-___" required>    
+                    </div>
+                </div>
+
+                <div class="rows1">
+                    <div class="inputBox">
+                        <span> Questions / Concerns</span>
+                        <textarea placeholder="Type your message here ..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="rows1">
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="cntact info">
+                <h3> <strong>Contact Info</strong></h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p> Hypodrom, Gazi Sokak Daire #2<br>TURKEY</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="#"> info@nyferoom.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="#">+123 456 789</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><img src="../lesson6/images/facebook.png" alt="facebook logo"></a>
+                        <a href="https://www.instagram.com/"><img src="../lesson6/images/instagram.png" alt="ig logo"></a>
+                    </div>
+                    <div class="social2">
+                        <img src="images/logo.webp" alt="logo">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="cntact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96105.16561278964!2d28.9542578933115!3d41.171919555579336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409fe02232a852d7%3A0x3a86cad07b1a4ec4!2zU2FyxLF5ZXIvxLBzdGFuYnVs!5e0!3m2!1sen!2str!4v1656641380327!5m2!1sen!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
         </div>
     </main>
 
@@ -73,5 +147,7 @@
             <script src="js/windchill.js"></script>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

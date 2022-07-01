@@ -6,151 +6,8 @@
 body {
 	font-size: 16px;
 	font-family: 'Merriweather', serif;
+    background-color: beige;
 }
-.contactus {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 5px;
-
-}
-.contactus .contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contactus .contact h2 {
-    font-size: 1.5em;
-    font-family: 'Merriweather', serif;
-    text-align: center;
-}
-
-.form {
-    grid-area: form;
-}
-.info {
-    grid-area: info;
-}
-.map {
-    grid-area: map;
-}
-.cntact {
-    padding: 40px;
-    background: beige;
-    box-shadow: 0 2px 8px rgb(56, 32, 1);
-}
-.box {
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
-    grid-template-areas:
-    "form info"
-    "form map" ;
-    grid-gap: 20px;
-    margin-top: 5px;
-}
-.cntact h3{
-    color: black;
-    font-weight: 500;
-    font-size: 1.4em;
-    margin-bottom: 10px;
-}
-
-/* form */
-.formBox {
-    position: relative;
-    width: 100%;
-}
-.formBox .rows {
-    display: flex;
-    gap: 20px;
-}
-.inputBox {
-    display: flex;
-    flex-direction: column; 
-    margin-bottom: 10px;
-    width: 50%;
-    border-radius: 4px;
-}
-.formBox .rows1 .inputBox {
-    width: 100%;
-}
-.inputBox span {
-    color: brown;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-.inputBox input {
-    padding: 10px;
-    font-size: 1.1em;
-    border-radius: 4px;
-    outline: none;
-    border: 1px solid burlywood;
-}
-
-.inputBox textarea {
-    padding: 10px;
-    font-size: 1.1em;
-    outline: none;
-    border: 1px solid burlywood;
-    resize: none;
-    min-height: 220px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-.inputBox input[type="submit"]
-{
-    background: burlywood;
-    color: white;
-    border: none;
-    font-size: 1.1em;
-    max-width: 120px;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 14px 15px;
-}
-.inputBox ::placeholder {
-    color: rgb(180, 171, 171);
-}
-
-.info .infoBox div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.info .infoBox div span {
-    min-width: 40px;
-    height: 40px;
-    color: white;
-    background: burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.info .infoBox div p {
-    font-size: 1.1em;
-}
-
-.info .infoBox div a {
-    color: black;
-    text-decoration: none;
-}
-.map  {
-    padding: 0;
-}
-.map iframe {
-    width: 100%;
-    height: 100%;
-}
-
-
 #banner {
 	display: none;
 	margin: 0 auto;
@@ -192,15 +49,6 @@ header h2 {
     align-items: center;
 	justify-content: center;
 }
-.social2 {
-    justify-self: end;
-    display: flex;
-    align-items: center;
-	justify-content: center;
-}
-.social2 img {
-    width: 30%;
-}
 .social img{
     width: 25px;
     margin: 0.1rem;
@@ -208,7 +56,7 @@ header h2 {
 .logo {
     max-width: 70px;
     margin: 5pt 5pt;
-    margin-right: -20px;
+    margin-right: -8px;
 } 
 header button {
     justify-self: end;
@@ -262,7 +110,6 @@ main h2,h3 {
     text-align: center;
     font-family: 'Merriweather', serif;
 }
-
 .index div{
     background-color: beige;
     margin: 0.4rem;
@@ -324,7 +171,7 @@ main h2,h3 {
 }
 
 .discover div{
-    background-color: rgb(163, 163, 114);
+    background-color: rgb(236, 236, 203);
     margin: 0.4rem;
     padding: 0.4rem;
     border: 1px #A1B0AB solid;
@@ -398,38 +245,114 @@ footer{
 .line {
     display: none;
 }
-
-@media (max-width: 991px)
-{
-    body 
-    {
-        background: white;
-    }
-    .contactus
-    {
-        padding: 20px;
-    }
-    .box {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "form"
-    "info"
-    "map" ;
-    }
-    .map 
-    {min-height: 300px;
-        padding: 0;
-    }
-    .formBox .rows {
-        display: flex;
-        gap: 0;
-        flex-direction: column;
-    }
-    .inputBox {
-        width: 100%;
-    }
-    .contact {
-        padding: 30px;
-    }
+/*--------------------------------------join page-------------------------------------------------*/
+form{
+    margin: 0 auto;
+    max-width: 500px;
 }
+hr{
+    margin: 0 auto;
+    max-width: 500px;   
+}
+main.join h2{
+    margin-top: 1.5rem;
+}
+form fieldset {
+    margin: 1.2rem 0.2rem;
+    border: 1px solid #1C211D;
+    border-radius: 8px;
+    padding: .5rem 2%;
+    background-color:  burlywood;
+}
+form legend{
+    color: #1C211D;
+    font-family: 'Merriweather', serif;
+    margin: 0 1rem;
+    padding: 0 .5rem 0.8rem .5rem;
+}
+form label.top{
+    display:block;
+    padding-bottom: 1rem;
+    color: #1C211D;
+    font-size: 0.9rem;
+}
+
+form label.top input, form label.top input select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px  rgb(163, 163, 114);;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #1C211D;
+    width:100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.top textarea{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px  rgb(163, 163, 114);
+    border-radius: 4px;
+    max-height: 40em;
+    height: 7em;
+    padding: 0.75em;
+    color: #1C211D;
+    width:100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs{
+    display: block;
+    padding: 0.75rem 0;
+    color: #1C211D;
+}
+form input.submitBtn {
+    border: solid 1px #555;
+    background-color: burlywood;
+    color: #1C211D;
+    border-radius: 0.7rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+main.join .benefits{
+    margin: 4rem;
+    display: none;
+
+}
+main.join .benefits p{
+    list-style-type: circle;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    margin-top: 2.5rem;
+}
+main.join ul li{
+    font-weight: 100;
+    margin: 0.5rem;
+    font-family: 'Merriweather', serif;
+}
+form label.top input:required{
+    background-color:  beige;
+}
+form label.top input:required:valid{
+    background-color: rgb(238, 228, 214);
+}
+/*-----------------------------thank you page ---------------------------------*/
+main.thanks h2,main.thanks p {
+    margin-top: 3rem;
+    text-align: center;
+}
+main.thanks p {
+    margin-bottom: 3rem;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
