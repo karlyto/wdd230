@@ -1,0 +1,489 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-size: 16px;
+        font-family: 'Ibarra Real Nova', serif;
+        background-color:  #181c2e;
+        color: white;
+    }
+    #banner {
+        display: none;
+        margin: 0 auto;
+        background-color: goldenrod;
+        border: 1px solid #bbb;
+        padding: 1rem;
+        text-align: center;
+        max-width: 1050px;
+    }
+    header, main, footer {
+        max-width: 1050px;
+        margin: 6pt auto;
+    }
+    header {
+        background-color: #181c2e;
+        display: grid;
+        grid-gap: 0.5rem;
+        align-items: center;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        justify-content: center;
+        opacity: 0.7;
+        border-radius: 5px;
+    }
+    .name {
+        justify-self: start;
+    }
+    h1 {
+        font-size: 1.2rem;
+        font-family: 'Ibarra Real Nova', serif;
+        color: rgb(255, 242, 218);
+    }
+    header h2 {
+        font-size: 0.8em;
+        border-top: 1px solid beige ;
+        color: rgb(255, 242, 218);
+    }
+    .social {
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social img{
+        width: 25px;
+        margin: 0.1rem;
+    }
+    .logo {
+        max-width: 70px;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    } 
+    header button {
+        justify-self: end;
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        margin-right: 20px; 
+        color: burlywood;
+    }
+    header .date{
+        grid-column: 1/5;
+        margin: 15px 8px;
+        color:  rgb(255, 242, 218);
+        background-color: goldenrod;
+        text-align: center; 
+    }
+    nav {
+        grid-column: 1/5;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        padding: .8rem 2vw;
+        color: white;
+        font-size: 1rem;
+    }
+    a {
+        color: white;
+    }
+    nav ul li a:hover {
+        color: goldenrod;
+        font-size: 118%;
+    
+    }
+    nav ul {display: none;}
+    nav ul.open {display: block;}
+    
+    .index .hero{
+        padding: 0;
+        position: relative;
+    }
+    .index .hero h2{
+        font-family: 'Ibarra Real Nova', serif;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: burlywood;
+        text-shadow: 2px 2px black;
+    }
+    main h2,h3 {
+        text-align: center;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+    .index div{
+        background-color:  #181c2e;
+        margin: 0.4rem;
+        padding: 0.4rem;
+        border: 1px goldenrod solid;
+    }
+    .index .hero img{
+        width: 100%;
+        margin: 0px;
+    }
+    .btns{
+        position: absolute;
+        top: 216px;
+        left: 328px;
+        display: flex;
+    }
+    
+    .btn{
+        background: transparent;
+        border: none;
+        margin: 87px;
+        font-size: 88px;
+        outline: none;
+        color: grey;
+    }
+    
+    .button{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        padding: 15px;
+        margin: 5px;
+        border: 1px solid;
+        transition: all 0.5s;
+        cursor: pointer;
+        border-radius: 5px ;
+        background-color:goldenrod;
+        font-weight: bold;
+    }
+    .button span {
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+    
+    .index div h2{
+        width: 100%;
+        margin: 0px;
+    }
+    .index div:nth-of-type(2) h2,h3{
+        margin: 8pt;
+    }
+    .index div:nth-of-type(3) img{
+        float: left;
+        width: 150px;
+    }
+    .index div:nth-of-type(3) p{
+        clear: left;
+    }
+    .index div:nth-of-type(3) h3{
+        margin-top: 8vh;
+        font-size: 22px;
+    }
+    .index div:nth-of-type(5){
+        display: none;
+    }
+    .spotlight {
+        border: 1px #A1B0AB solid;
+        background-color: #E9ECEA;
+        margin: 0.4rem;
+        padding: 1rem;
+        height: auto;
+    }
+    .spotlight div:nth-of-type(1) img, .spotlight div:nth-of-type(2) img{
+        width: 60%; 
+    }
+    .spotlight div:nth-of-type(1) p, .spotlight div:nth-of-type(2) p{
+        width: 100%;
+    } 
+    .lastspot{
+        display: none;
+    }
+    .spotlight div {
+        margin: 0;
+    }
+    
+    .discover div{
+        background-color: #181c2e;
+        opacity: 0.9;
+        margin: 0.4rem;
+        padding: 0.4rem;
+        border: 1px #A1B0AB solid;
+    }
+    
+    .discover h2{
+        margin: 10px;
+    }
+    
+    .discover picture ~ p {
+        margin: 25px;
+    } 
+    
+    .discover picture{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .discover div:nth-of-type(1) img{
+        width: 100%;
+        max-width: 450px;
+        text-align: center;
+        margin: auto;
+        border: 2px #A1B0AB solid;
+    }
+    .discover div:nth-of-type(2) img{
+        border: 1px rgb(163, 163, 114) solid;
+    }
+    
+    .discover div:nth-of-type(1) div{
+        margin: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    
+    
+    
+    #HotelBtn span:nth-child(1) {display: block;}
+    #HotelBtn span:nth-child(2) {display: none;}
+    
+    #HotelBtn.open span:nth-child(1) {display: none;}
+    #HotelBtn.open span:nth-child(2) {display: block;}
+    
+    footer{
+        background-color: #181c2e;
+        color: white;
+        opacity: 0.7;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 8pt;
+    }
+    .title{
+        margin-bottom: 1rem;
+    }
+    .title img{
+        width: 150px;
+    }
+    .contact, .contact p{
+        margin-bottom: 1rem;
+    }
+    .contact a{
+        color:rgb(163, 163, 114) ;
+    }
+    .end{
+        border-top: 0.1rem rgb(163, 163, 114) solid;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+    .line {
+        display: none;
+    }
+    /*--------------------------------------join page-------------------------------------------------*/
+    form{
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    hr{
+        margin:auto;
+        max-width: 500px;   
+    }
+    main.join h2{
+        margin-top: 1.5rem;
+    }
+    form fieldset {
+        margin: 1.2rem 0.2rem;
+        border: 1px solid goldenrod;
+        border-radius: 8px;
+        padding: .5rem 2%;
+        background-color: #181c2e;
+        opacity: 0.8;
+    }
+    form legend{
+        color: white;
+        font-family: 'Ibarra Real Nova', serif;
+        margin: 0 1rem;
+        padding: 0 .5rem 0.8rem .5rem;
+    }
+    form label.top{
+        display:block;
+        padding-bottom: 1rem;
+        color: white;
+        font-size: 1.1em;
+    }
+    
+    form label.top input, form label.top input select{
+        -webkit-appearance: none;
+        display: block;
+        font-size: 1rem;
+        border: solid 1px burlywood;
+        border-radius: 4px;
+        padding: .75rem;
+        color: black;
+        width:100%;
+        max-width: 20rem;
+        background-color: #181c2e;
+    }
+    form label.top textarea{
+        -webkit-appearance: none;
+        display: block;
+        font-size: 1rem;
+        border: solid 1px  rgb(163, 163, 114);
+        border-radius: 4px;
+        max-height: 40em;
+        height: 7em;
+        padding: 0.75em;
+        color: #1C211D;
+        width:100%;
+        max-width: 20rem;
+        background-color: white;
+    }
+    form label.sbs{
+        display: block;
+        color: white;
+    }
+    form input.submitBtn {
+        border: solid 1px #555;
+        background-color: goldenrod;
+        opacity: 0.9;
+        cursor: pointer;
+        color: #1C211D;
+        border-radius: 0.7rem;
+        padding: 0.75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 96%;
+        max-width: 20rem;
+    }
+    main.join .benefits{
+        margin: 4rem;
+        display: none;
+    
+    }
+    main.join .benefits p{
+        list-style-type: circle;
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1rem 0;
+        margin-top: 2.5rem;
+    }
+    main.join ul li{
+        font-weight: 100;
+        margin: 0.5rem;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+    form label.top input:required{
+        background-color: white;
+    }
+    form label.top input:required:valid{
+        background-color: white;
+    }
+    /*-----------------------------thank you page ---------------------------------*/
+    main.thanks h2,main.thanks p {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    main.thanks p {
+        margin-bottom: 3rem;
+    }
+    
+    #HotelBtn span:nth-child(1) {display: block;}
+    #HotelBtn span:nth-child(2) {display: none;}
+    
+    #HotelBtn.open span:nth-child(1) {display: none;}
+    #HotelBtn.open span:nth-child(2) {display: block;}
+    
+    /*-----------------------------directory page ---------------------------------*/
+    main.directory figure{
+        display: flex;
+        justify-content: center;
+    }
+    main.directory figure img {
+        margin: 1rem;
+        width: 2rem;
+    }
+    main.directory div.grid{
+        display: block;
+    }
+    .dpage {
+        text-align: center;
+        color: white;
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: 50px;
+    }
+    main.directory div.grid section{
+        margin: 10px;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgb(36, 82, 150);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        background-color: #181c2e;
+        color: white;
+        font-family: 'Ibarra Real Nova', serif;
+        border: 1px #A1B0AB solid;
+        align-items: center;
+        
+      }
+      main.directory div.list section {
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
+      main.directory div.list section:nth-child(odd) {
+        background-color: beige;
+      }
+    main.directory div.cards h2{
+        margin: 0.5rem;
+    }
+    main.directory div.cards p{
+        margin: 0.25rem;
+        text-align: center;
+    }
+    main.directory div.grid img {
+        width: 80%;
+        margin: 0.5rem;
+        align-items: center;
+      }  
+    main.directory div.list h2{
+        margin-left: 0.075rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+    main.directory div.list img{
+        display: none;
+    }
+    main.directory div.list p{
+        margin-left: 0.075rem;
+        text-align:left;
+        
+    }
+    
+    .title{
+        margin-bottom: 1rem;
+    }
+    .title img{
+        width: 150px;
+    }
+    .contact, .contact p{
+        margin-bottom: 1rem;
+    }
+    .contact a{
+        color: #D5ECD4;
+    }
+    .end{
+        border-top: 0.1rem rgba(255,255,255, 0.2) solid;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+    .end a {
+        color:white;
+    }
+    .line {
+        display: none;
+    }

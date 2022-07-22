@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "image": "https://assets.ldscdn.org/1d/54/1d544493ab28695b7030205cd94e5cd038b603cf/washington_dc_mormon_temple.jpeg",
+            "name": "WASHINGTON DC TEMPLE",
+            "phone": "+1 301-588-0650",
+            "email": "info@churchuofjesuschrist.org",
+            "url": "https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple?lang=eng",
+            "address": "9900 Stoneybrook Dr,Kensington MD 20895-3199,United States",
+            "membership": ""
+        },
+        {
+            "image": "https://assets.ldscdn.org/f7/43/f743a6a7ecb335e36c8847d1ed3153f44422460e/provo_temple_lds.jpeg",
+            "name": "PROVO UTAH TEMPLE",
+            "phone": "+1 801-375-5775",
+            "email": "info@churchuofjesuschrist.org",
+            "url": "https://www.churchofjesuschrist.org/temples/details/provo-utah-temple?lang=eng",
+            "address": "2200 Temple Hill Dr,Provo UT 84604-1775,United States",
+            "membership": ""
+        },
+        {
+            "image": "https://assets.ldscdn.org/b5/37/b537f20ccdd2f7ba4f3413a055bcaab21fd3e107/rome_italy_temple.png",
+            "name": "ROME ITALY TEMPLE",
+            "phone": "+39 06-9480-5050",
+            "email": "info@churchuofjesuschrist.org",
+            "url": "https://www.churchofjesuschrist.org/temples/details/rome-italy-temple?lang=eng",
+            "address": "Via di Settebagni 376,Rome RM,Italy",
+            "membership": ""
+        },
+        {
+            "image": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/800x500/slctemple7.jpg",
+            "name": "SALT LAKE TEMPLE",
+            "phone": "+1 301-588-0650",
+            "email": "info@churchuofjesuschrist.org",
+            "url": "https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng",
+            "address": "50 W North Temple St,Salt Lake City UT 84150-9709,United States",
+            "membership": ""
+        },
+        {
+            "image": "https://assets.ldscdn.org/05/ba/05baca7fd19cb67cd1379e82b1d38ef996ec2eb2/mexico_city_temple_lds.jpg",
+            "name": "MEXICO CITY TEMPLE",
+            "phone": "+52 55-5003-3700",
+            "email": "info@churchuofjesuschrist.org",
+            "url": "https://www.churchofjesuschrist.org/temples/details/mexico-city-mexico-temple?lang=eng",
+            "address": "Avenida 510 #90,Col. San Juan de Aragon,07950 México, Distrito Federal, Mexico",
+            "membership": ""
+        },
+        {
+            "image": "https://assets.ldscdn.org/80/5d/805d70b4606a3a2220b2291c80e954b86a8ee94b/madrid_spain_temple_lds.jpeg",
+            "name": "MADRID SPAIN TEMPLE",
+            "phone": "+34 91-214-2607",
+            "email": "info@churchuofjesuschrist.org",
+            "url": "https://www.churchofjesuschrist.org/temples/details/madrid-spain-temple?lang=eng",
+            "address": "Calle Del Templo No 2,Madrid,28030 Madrid, Spain",
+            "membership": ""
+        }
+
+        
+    ]
+}

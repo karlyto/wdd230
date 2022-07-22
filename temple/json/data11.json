@@ -1,0 +1,53 @@
+{
+    "temples": [
+        {
+            "adress": "1",
+            "phone": "1",
+            "email": "1",
+            "services": "1",
+            "history": "1",
+            "ordinances_schedule": "1",
+            "session_schedule": "1",
+            "closure_schedule": "1",
+            "image": "1"
+
+        },
+        {
+            "adress": "",
+            "phone": "",
+            "email": "",
+            "services": "",
+            "history": "",
+            "ordinances_schedule": "",
+            "session_schedule": "",
+            "closure_schedule": "",
+            "image": ""
+
+        },
+        {
+            "adress": "",
+            "phone": "",
+            "email": "",
+            "services": "",
+            "history": "",
+            "ordinances_schedule": "",
+            "session_schedule": "",
+            "closure_schedule": "",
+            "image": ""
+
+        },
+        {
+            "adress": "",
+            "phone": "",
+            "email": "",
+            "services": "",
+            "history": "",
+            "ordinances_schedule": "",
+            "session_schedule": "",
+            "closure_schedule": "",
+            "image": ""
+
+        }
+       
+    ]
+}

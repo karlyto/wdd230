@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reservation </title>
+    <meta name="description" content="Reservation Page.">
+    <link rel="icon" href="images_temple/temple_logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css_temples/normalize.css">
+    <link rel="stylesheet" href="css_temples/small.css">
+    <link rel="stylesheet" href="css_temples/medium.css">
+    <link rel="stylesheet" href="css_temples/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/windchill.js"></script>
+    <link rel="shortcut icon" href="images_temple/temple_logo.webp">
+</head>
+<body style="background-image: url(../temple/images_temple/img3.jpg);">
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.<button id="close">❌</button></div>
+    <header>
+        <img class="logo" src="images_temple/Templein&Suites.webp" alt="temple">
+        <div class="name">
+            <h1>Temple Inn & Suites </h1>
+            <h2 class="coc">Hotel Services</h2>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/LDSTemples" target="_blank"><img src="images_temple/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/churchofjesuschristtemples/" target="_blank"><img src="images_temple/instagram.png" alt="ig logo"></a>
+        </div>
+        <button id="HotelBtn"><span>🏢</span><span>❌</span></button>
+        <span class="date" id="currentdate"></span>
+        <nav>
+            <ul class="navigation" id="primaryNav">
+                <li><a href="../temple/index.html"><strong>Home</strong></a></li>
+                <li><a href="../temple/temple.html"><strong>Temple</strong></a></li>
+                <li><a href="../temple/services.html"><strong>Services</strong></a></li>
+                <li><a href="../temple/reservation.html"><strong>Reservation</strong></a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+    <main class="join">
+        <div class="introduction">
+            <h2>WELCOME !!</h2>
+        </div>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend><strong>Registrant Information</strong></legend>
+               <label class="top"> First Name* <input type="text" name="fname" placeholder="John" required> </label>
+               <label class="top"> Last Name* <input type="text" name="lname" placeholder="Doe" required> </label>
+               <label class="top"> Email* <input type="email" name="email" placeholder="user@domain.com" required> </label>
+               <label class="top"> Phone* <input type="tel" name="phone" placeholder="(__)___ __ ___" required> </label>
+               <label class="top"> State/Country <input type="text" name="country" placeholder="Country/state" required> </label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Duration Of Stay</strong></legend>
+                <label class="top"> Arrival Date* <input type="text" name="arrival" placeholder="dd/mm/yy" required> </label>
+                <label class="top"> Departure Date* <input type="text" name="Departure" placeholder="dd/mm/yy" required> </label>
+                <label class="top"> Comments <textarea name="description"></textarea> </label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Room Description</strong></legend>
+                <label class="sbs"><input type="radio" name="membership" value="np-membership"> Complete / Piano</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze-membership"> Missionary Couple</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver-membership"> Family Suites</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold-membership"> Single Bed</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold-membership"> Young Married</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold-membership"> Temple view</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold-membership"> Town view</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold-membership"> Specialized Room</label>
+            </fieldset>
+            <input type="hidden" id="date-time" name="date-time" value="CurrentTime">
+            <input type="submit" value="Book Now" class="submitBtn">
+            <hr>
+        </form>
+       
+    </main>
+
+    <footer>
+        <div class="title">
+            <img src="images_temple/Templein&Suites.webp" alt="logo">
+            <div>
+                <h1>Temple Inn & Suites</h1>
+                <p>4800 Montgomery Ln #300, MD 20814  </p>
+                <p>Bethesda</p>
+                <p>☎️<a href=""> Contact us</a></p> 
+            </div>
+        </div>
+        <div class="contact">
+            <p>info@templeinn.org</p>
+            <p>+1 123-456-789</p>
+            <p>&#128205;<a href="https://goo.gl/maps/8LBSiPEEZG4NAfT87" target="_blank">Location map</a></p> </div>
+            <div class="social">
+                <a href="https://www.facebook.com/LDSTemples" target="_blank"><img src="images_temple/facebook.png" alt="facebook logo"></a>
+                <a href="https://www.instagram.com/churchofjesuschristtemples/" target="_blank"><img src="images_temple/instagram.png" alt="ig logo"></a>
+            </div>
+        <div class="end">
+            <p>&copy; <span id="currentyear"></span> Temple Inn & Suites </p>
+            <p class="line">|</p>
+            <p><a href="https://www.churchofjesuschrist.org/temples?lang=eng" target="_blank"><b>Ressources</b> </a></p>
+            <p class="line">|</p>
+            <p>Last Modification: <span id="lastModific"></span></p>
+            
+        </div>
+    </footer>
+</body>
+</html>
