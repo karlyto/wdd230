@@ -21,7 +21,6 @@ fetch(requestURL)
     let phone = document.createElement('p');
     let address = document.createElement('p');
     let website = document.createElement('p');
-    let membership = document.createElement('p');
     let email = document.createElement('p');
   
     // Change the textContent property of the h2 element to contain the prophet's full name
@@ -33,19 +32,13 @@ fetch(requestURL)
     email.textContent = `${company.email}`;
     phone.textContent = `${company.phone}`;
     address.textContent = `${company.address}`;
-    membership.textContent = `${company.membership}`;
     website.innerHTML = `<a href="${company.url}" target="_blank">Additional Information</a>`;
-    
-
-    
-  
     // Add/append the section(card) with the h2 element
     card.appendChild(h2)
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(email);
     card.appendChild(website);
-    card.appendChild(membership);
     card.appendChild(image);
 
 

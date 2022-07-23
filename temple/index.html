@@ -55,7 +55,7 @@
                 MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.
                 </p>
                 <picture>
-                    <img src="images_temple/imm.jpg" alt="image" style="width:231px;height:320px;">
+                    <img src="images_temple/img1.webp" alt="image" style="width:320px;height:320px;">
                 </picture>
                 <p>Services available from Tuesday to Saturday. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and <br> accommodations that meet the needs of those patrons.
                 <a href="https://www.churchofjesuschrist.org/temples?lang=eng" target="_blank"><b>More about our Temples ...</b></a>
@@ -63,12 +63,19 @@
         </div>
         <div>
             <h2>Weather</h2>
-            <img id="weather-icon" src="images_temple/cloudy.png" alt="weather">
-            <h3><span id="temperature">9</span>°C<br><span id="condition"></span></h3>
+            <img id="weather-icon" src="#" alt="weather">
+            <p><span id="figcaption"></span></p>
             <p>
-                Wind speed: <span id="wind"></span> km/h<br>
-                Wind Chill: <span id="chill"></span>
+                Temperature: <span id="current-temp"></span>°C<br>
+                Humidity: <span id="current-hum"></span>%<br>
             </p>
+        
+        <h3>Forecast</h3>
+            <div class="forecast">
+                <p><span id="day-1"></span>: <span id="temp-1"></span>&deg;C</p>
+                <p><span id="day-2"></span>: <span id="temp-2"></span>&deg;C</p>
+                <p><span id="day-3"></span>: <span id="temp-3"></span>&deg;C</p>
+            </div>
         </div>
         <div>
             <h2>WELCOME TO THE TEMPLE INN & SUITES</h2>
@@ -92,15 +99,15 @@
         </div>
         <div class="spotlight">
             <div>
-                <h2>🖼 Temples Gallery 🖼</h2>
-                <a href="https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng" target="_blank"><b> See our Temples</b>
+                <h2>Temples Gallery</h2>
                     <img src="images_temple/img.webp" alt="image" style="width:200px;height:300px;">
-                </a>
+                    <h3><a href="https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng" target="_blank"><b> See our Temples</b>
+                </a></h3>
             </div>
             <div>
                 <h2> Apostles About a Temple</h2>
-                <iframe width="226" height="300" src="https://www.youtube.com/embed/dhWgPwEQQ98" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Virtual Tour of the Rome Italy Temple</h3>
+                <img src="images_temple/Templein&Suites.webp" alt="img">
+                <h3><a href="https://www.youtube.com/watch?v=2LWK6ugmZLo" target="_blank"><b>Scaled Salt Lake Temple Model</b></a></h3>
             </div>
             <div class="lastspot">
                 <h2> Two Places, One feeling</h2>
@@ -136,7 +143,7 @@
         <div class="end">
             <p>&copy; <span id="currentyear"></span> Temple Inn & Suites </p>
             <p class="line">|</p>
-            <p><a href="https://www.churchofjesuschrist.org/temples?lang=eng" target="_blank"><b>Ressources</b> </a></p>
+            <p><a href="https://openweathermap.org/" target="_blank"><b>Openweathermap Ressources</b> </a></p>
             <p class="line">|</p>
             <p>Last Modification: <span id="lastModific"></span></p>
             <script src="scripts/date.js" defer></script>

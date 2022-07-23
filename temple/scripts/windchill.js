@@ -1,11 +1,17 @@
-const temperature = document.querySelector('#temperature');
-const wind = document.querySelector('#wind');
+// select HTML elements to edit
+const currentTemp = document.querySelector('#current-temp');
+const currentHum = document.querySelector('#current-hum');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#condition');
-let chill = document.querySelector('#chill');
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Bethesda&appid=8ff9999d552995216615d400071558b8&units=metric';
+const captionDesc = document.querySelector('#figcaption');
+const day1 = document.querySelector('#day-1');
+const day2 = document.querySelector('#day-2');
+const day3 = document.querySelector('#day-3');
+const temp1 = document.querySelector('#temp-1');
+const temp2 = document.querySelector('#temp-2');
+const temp3 = document.querySelector('#temp-3');
+const alert = document.querySelector('#alert');
 
-// weather data------------------------------------------------------------------------------//
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=38.9807&lon=-77.1003&exclude=hourly,minutely&appid=8ff9999d552995216615d400071558b8';
 
 async function apiFetch() {
     try {
@@ -25,13 +31,26 @@ async function apiFetch() {
   apiFetch();
 
   function displayResults(weatherData) {
-    temperature.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    currentTemp.innerHTML = `${(weatherData.current.temp-273).toFixed(0)}`;
+    currentHum.innerHTML = `${weatherData.current.humidity.toFixed(0)}`;
+
+    day1.innerHTML = `${(new Date(weatherData.daily[1].dt*1000)).toDateString()}`;
+    day2.innerHTML = `${(new Date(weatherData.daily[2].dt*1000)).toDateString()}`;
+    day3.innerHTML = `${(new Date(weatherData.daily[3].dt*1000)).toDateString()}`;
+
+    temp1.innerHTML = `${(weatherData.daily[1].temp.day-273).toFixed(0)}`;
+    temp2.innerHTML = `${(weatherData.daily[2].temp.day-273).toFixed(0)}`;
+    temp3.innerHTML = `${(weatherData.daily[3].temp.day-273).toFixed(0)}`;
+
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.current.weather[0].icon}.png`;
+    const desc = weatherData.current.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = capitalize(desc);
-    wind.innerHTML = weatherData.wind.speed;
+
+    if (weatherData.alerts){
+      alert.innerHTML = `${weatherData.alerts[0].description}`;
+    }
   }
 
   const capitalize = (str) => {
@@ -39,23 +58,4 @@ async function apiFetch() {
     return strArr.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" ");
 }
 
-
-
-let xtemp = parseFloat(temperature.textContent);
-let y = parseFloat(wind.textContent);
-
-xtemp = (xtemp*(9/5)) +32;
-y = y/1.60934;
-
-console.log(xtemp);
-console.log(y);
-let result = 0;
-let resulttext = ""; 
-if ((xtemp <= 50) && (y > 3) ){
-    result =  35.74 + (0.6215*xtemp) - (35.75*(y**0.16)) + (0.4275*xtemp*(y**0.16)) ;
-    chill.innerHTML = `${result.toFixed(1)} F°`;
-}else{
-    resulttext = "N/A"
-    chill.innerHTML = resulttext;
-}
-
+console.log(Date.now());
